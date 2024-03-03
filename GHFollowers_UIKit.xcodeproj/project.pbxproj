@@ -135,19 +135,12 @@
 		797485B42B93E47F0060943E /* GHFollowers_UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				797486122B950F580060943E /* Resources */,
+				797486112B950F400060943E /* App */,
+				797486102B950E530060943E /* View Controllers */,
 				797485FB2B9500350060943E /* Utilities */,
 				797485F62B94D7BF0060943E /* Models */,
 				797485F52B94D7AC0060943E /* Views */,
-				797485B52B93E47F0060943E /* AppDelegate.swift */,
-				797485B72B93E47F0060943E /* SceneDelegate.swift */,
-				797485BE2B93E4800060943E /* Assets.xcassets */,
-				797485C02B93E4800060943E /* LaunchScreen.storyboard */,
-				797485C32B93E4800060943E /* Info.plist */,
-				797485E52B94B2B20060943E /* SearchViewController.swift */,
-				797485E92B94B2DE0060943E /* FavoritesListViewController.swift */,
-				797485F72B94FD260060943E /* FollowerListViewController.swift */,
-				797486082B9506A30060943E /* GFAlertViewController.swift */,
-				7974860C2B950BFE0060943E /* UIViewController+Ext.swift */,
 			);
 			path = GHFollowers_UIKit;
 			sourceTree = "<group>";
@@ -191,8 +184,39 @@
 			isa = PBXGroup;
 			children = (
 				797485FC2B9500470060943E /* TextValidation.swift */,
+				7974860C2B950BFE0060943E /* UIViewController+Ext.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		797486102B950E530060943E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				797485E52B94B2B20060943E /* SearchViewController.swift */,
+				797485E92B94B2DE0060943E /* FavoritesListViewController.swift */,
+				797485F72B94FD260060943E /* FollowerListViewController.swift */,
+				797486082B9506A30060943E /* GFAlertViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		797486112B950F400060943E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				797485C32B93E4800060943E /* Info.plist */,
+				797485B52B93E47F0060943E /* AppDelegate.swift */,
+				797485B72B93E47F0060943E /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		797486122B950F580060943E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				797485BE2B93E4800060943E /* Assets.xcassets */,
+				797485C02B93E4800060943E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
