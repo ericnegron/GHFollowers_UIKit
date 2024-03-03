@@ -120,8 +120,6 @@
 				797485C32B93E4800060943E /* Info.plist */,
 				797485E52B94B2B20060943E /* SearchViewController.swift */,
 				797485E92B94B2DE0060943E /* FavoritesListViewController.swift */,
-				797485ED2B94D37B0060943E /* GFButton.swift */,
-				797485F12B94D6760060943E /* GFTextField.swift */,
 			);
 			path = GHFollowers_UIKit;
 			sourceTree = "<group>";
@@ -146,6 +144,8 @@
 		797485F52B94D7AC0060943E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				797485ED2B94D37B0060943E /* GFButton.swift */,
+				797485F12B94D6760060943E /* GFTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

@@ -26,6 +26,7 @@ class GFButton: UIButton {
         configureButton()
     }
     
+    
     // MARK: custom styling
     private func configureButton() {
         layer.cornerRadius = 10
