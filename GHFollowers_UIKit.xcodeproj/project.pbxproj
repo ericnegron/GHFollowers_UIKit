@@ -53,9 +53,9 @@
 		7974861E2B95191D0060943E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7974861D2B95191D0060943E /* NetworkManager.swift */; };
 		7974861F2B95191D0060943E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7974861D2B95191D0060943E /* NetworkManager.swift */; };
 		797486202B95191D0060943E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7974861D2B95191D0060943E /* NetworkManager.swift */; };
-		797486222B95251C0060943E /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797486212B95251C0060943E /* ErrorMessage.swift */; };
-		797486232B95251C0060943E /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797486212B95251C0060943E /* ErrorMessage.swift */; };
-		797486242B95251C0060943E /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797486212B95251C0060943E /* ErrorMessage.swift */; };
+		797486222B95251C0060943E /* GHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797486212B95251C0060943E /* GHError.swift */; };
+		797486232B95251C0060943E /* GHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797486212B95251C0060943E /* GHError.swift */; };
+		797486242B95251C0060943E /* GHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797486212B95251C0060943E /* GHError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,7 +100,7 @@
 		797486152B9514C90060943E /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		797486192B95158D0060943E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7974861D2B95191D0060943E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		797486212B95251C0060943E /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		797486212B95251C0060943E /* GHError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +205,7 @@
 				797485FC2B9500470060943E /* TextValidation.swift */,
 				7974860C2B950BFE0060943E /* UIViewController+Ext.swift */,
 				7974861D2B95191D0060943E /* NetworkManager.swift */,
-				797486212B95251C0060943E /* ErrorMessage.swift */,
+				797486212B95251C0060943E /* GHError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -374,7 +374,7 @@
 				7974860D2B950BFE0060943E /* UIViewController+Ext.swift in Sources */,
 				797485EE2B94D37B0060943E /* GFButton.swift in Sources */,
 				797485F82B94FD260060943E /* FollowerListViewController.swift in Sources */,
-				797486222B95251C0060943E /* ErrorMessage.swift in Sources */,
+				797486222B95251C0060943E /* GHError.swift in Sources */,
 				797485B62B93E47F0060943E /* AppDelegate.swift in Sources */,
 				7974861A2B95158D0060943E /* User.swift in Sources */,
 				797486092B9506A30060943E /* GFAlertViewController.swift in Sources */,
@@ -404,7 +404,7 @@
 				797486022B95039C0060943E /* GFTitleLabel.swift in Sources */,
 				7974861F2B95191D0060943E /* NetworkManager.swift in Sources */,
 				797485FE2B9500470060943E /* TextValidation.swift in Sources */,
-				797486232B95251C0060943E /* ErrorMessage.swift in Sources */,
+				797486232B95251C0060943E /* GHError.swift in Sources */,
 				797485EF2B94D37B0060943E /* GFButton.swift in Sources */,
 				797485CD2B93E4810060943E /* GHFollowers_UIKitTests.swift in Sources */,
 			);
@@ -419,7 +419,7 @@
 				7974860F2B950BFE0060943E /* UIViewController+Ext.swift in Sources */,
 				797485F02B94D37B0060943E /* GFButton.swift in Sources */,
 				797485FA2B94FD260060943E /* FollowerListViewController.swift in Sources */,
-				797486242B95251C0060943E /* ErrorMessage.swift in Sources */,
+				797486242B95251C0060943E /* GHError.swift in Sources */,
 				797485D92B93E4810060943E /* GHFollowers_UIKitUITestsLaunchTests.swift in Sources */,
 				7974861C2B95158D0060943E /* User.swift in Sources */,
 				7974860B2B9506A30060943E /* GFAlertViewController.swift in Sources */,

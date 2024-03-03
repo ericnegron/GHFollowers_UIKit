@@ -15,18 +15,29 @@ class FollowerListViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
-        
-        NetworkManager.shared.getGHFollowers(forUserName: username, page: 1) { followers, errorMessage in
+  
+        NetworkManager.shared.getGHFollowers(forUserName: username, page: 1) { result in
             
-            guard let followers = followers else {
-                self.presentGFAlertOnMainThread(title: "Error", message: errorMessage!.rawValue, buttonTitle: "Ok")
-                return
+            switch result {
+                case .success(let followers):
+                    print("Followers: \(followers)")
+                case .failure(let error):
+                    self.presentGFAlertOnMainThread(title: "Bad Stuff", message: error.rawValue, buttonTitle: "Ok")
             }
             
-            print("Follower.count = \(followers.count)")
-            print("Followers: \(followers)")
-            
         }
+        
+//        NetworkManager.shared.getGHFollowers(forUserName: username, page: 1) { followers, errorMessage in
+//            
+//            guard let followers = followers else {
+//                self.presentGFAlertOnMainThread(title: "Error", message: errorMessage!.rawValue, buttonTitle: "Ok")
+//                return
+//            }
+//            
+//            print("Follower.count = \(followers.count)")
+//            print("Followers: \(followers)")
+//            
+//        }
 
     }
     
