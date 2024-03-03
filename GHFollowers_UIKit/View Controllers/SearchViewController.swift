@@ -28,8 +28,8 @@ class SearchViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        // Handle Nav Controller
-        navigationController?.isNavigationBarHidden = true
+        // Handle Nav Controller        
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     // MARK: - Actions

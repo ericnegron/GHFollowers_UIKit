@@ -39,6 +39,7 @@ class GFAlertViewController: UIViewController {
     }
     
     // MARK: - Custom Styling
+    // TODO: Pull this out into own custom view
     private func configAlertView() {
         view.addSubview(containerView)
         containerView.backgroundColor = .systemBackground
