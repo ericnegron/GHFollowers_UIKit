@@ -12,6 +12,7 @@ class SearchViewController: UIViewController {
     let logoImageView = UIImageView()
     let usernameTextField = GFTextField()
     let searchButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
+    var isUserNameEntered: Bool { !usernameTextField.text!.isEmpty }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class SearchViewController: UIViewController {
         configureLogoImageView()
         configureUserNameTextField()
         configureSearchButton()
+        createDismissKeyboardTapGesture()
         
     }
     
@@ -30,6 +32,28 @@ class SearchViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
     }
 
+    // MARK: Actions
+    func createDismissKeyboardTapGesture() {
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        view.addGestureRecognizer(tap)
+    }
+    
+    // MARK: Navigation
+    @objc func pushFollowerListViewController() {
+        
+        guard isUserNameEntered else { 
+            print("No Username")
+            return
+        }
+        
+        let followerListVC = FollowerListViewController()
+        followerListVC.username = usernameTextField.text
+        followerListVC.title = usernameTextField.text
+        
+        navigationController?.pushViewController(followerListVC, animated: true)
+    
+    }
+    
     
     // MARK: custom styling
     func configureLogoImageView() {
@@ -48,7 +72,7 @@ class SearchViewController: UIViewController {
     
     func configureUserNameTextField() {
         view.addSubview(usernameTextField)
-        //usernameTextField.translatesAutoresizingMaskIntoConstraints = false
+        usernameTextField.delegate = self
         
         // Auto Layout Constraints
         NSLayoutConstraint.activate([
@@ -62,6 +86,7 @@ class SearchViewController: UIViewController {
     
     func configureSearchButton() {
         view.addSubview(searchButton)
+        searchButton.addTarget(self, action: #selector(pushFollowerListViewController), for: .touchUpInside)
         
         // Auto Layout Constraints
         NSLayoutConstraint.activate([
@@ -70,5 +95,13 @@ class SearchViewController: UIViewController {
             searchButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
             searchButton.heightAnchor.constraint(equalToConstant: 50)
         ])
+    }
+}
+
+
+extension SearchViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        pushFollowerListViewController()
+        return true
     }
 }
