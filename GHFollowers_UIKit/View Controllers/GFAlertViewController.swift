@@ -38,7 +38,7 @@ class GFAlertViewController: UIViewController {
         configAlertView()
     }
     
-    // MARK: Custom Styling
+    // MARK: - Custom Styling
     private func configAlertView() {
         view.addSubview(containerView)
         containerView.backgroundColor = .systemBackground
@@ -102,7 +102,7 @@ class GFAlertViewController: UIViewController {
     }
     
     
-    // MARK: Actions
+    // MARK: - Actions
     @objc func dimissVC() {
         dismiss(animated: true)
     }

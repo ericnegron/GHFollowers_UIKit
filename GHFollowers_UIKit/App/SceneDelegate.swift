@@ -58,7 +58,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     
-    // MARK: Create View Controllers
+    // MARK: - Create View Controllers
     
     func createSearchNavigationController() -> UIViewController {
         let searchViewController = SearchViewController()

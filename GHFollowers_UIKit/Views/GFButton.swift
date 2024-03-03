@@ -27,7 +27,7 @@ class GFButton: UIButton {
     }
     
     
-    // MARK: custom styling
+    // MARK: - custom styling
     private func configureButton() {
         layer.cornerRadius = 10
         titleLabel?.textColor = .white

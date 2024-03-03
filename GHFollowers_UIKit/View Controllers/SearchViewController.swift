@@ -32,13 +32,13 @@ class SearchViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
     }
 
-    // MARK: Actions
+    // MARK: - Actions
     func createDismissKeyboardTapGesture() {
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         view.addGestureRecognizer(tap)
     }
     
-    // MARK: Navigation
+    // MARK: - Navigation
     @objc func pushFollowerListViewController() {
         
         guard isUserNameEntered else { 
@@ -55,7 +55,7 @@ class SearchViewController: UIViewController {
     }
     
     
-    // MARK: custom styling
+    // MARK: - custom styling
     func configureLogoImageView() {
         view.addSubview(logoImageView)
         logoImageView.translatesAutoresizingMaskIntoConstraints = false

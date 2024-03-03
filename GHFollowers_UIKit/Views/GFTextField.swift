@@ -20,7 +20,7 @@ class GFTextField: UITextField {
     
     
     
-    // MARK: Custom styling
+    // MARK: - Custom styling
     private func configureTextField() {
         translatesAutoresizingMaskIntoConstraints = false
         

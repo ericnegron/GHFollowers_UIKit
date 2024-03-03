@@ -25,7 +25,7 @@ class GFTitleLabel: UILabel {
         configureLabel()
     }
     
-    // MARK: Custom Styling
+    // MARK: - Custom Styling
     private func configureLabel() {
         textColor = .label
         adjustsFontSizeToFitWidth = true

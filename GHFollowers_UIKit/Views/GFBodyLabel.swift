@@ -24,7 +24,7 @@ class GFBodyLabel: UILabel {
         configBodyLabel()
     }
     
-    // MARK: Custom Styling
+    // MARK: - Custom Styling
     private func configBodyLabel() {
         textColor = .secondaryLabel
         font = UIFont.preferredFont(forTextStyle: .body)
