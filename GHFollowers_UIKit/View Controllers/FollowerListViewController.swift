@@ -78,9 +78,11 @@ class FollowerListViewController: UIViewController {
     
     // MARK: - Networking
     func getFollowers(username: String, page: Int) {
+        showLoadingView()
         NetworkManager.shared.getGHFollowers(forUserName: username, page: page) { [weak self] result in
             guard let self = self else { return }
-                        
+            self.hideLoadingView()
+            
             switch result {
             case .success(var returnedFollowers):
                 if returnedFollowers.count < 100 {
