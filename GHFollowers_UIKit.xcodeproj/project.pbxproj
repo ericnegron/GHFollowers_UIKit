@@ -68,6 +68,9 @@
 		7991C2BF2B9795F7009381D7 /* GHEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991C2BE2B9795F7009381D7 /* GHEmptyView.swift */; };
 		7991C2C02B9795F7009381D7 /* GHEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991C2BE2B9795F7009381D7 /* GHEmptyView.swift */; };
 		7991C2C12B9795F7009381D7 /* GHEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991C2BE2B9795F7009381D7 /* GHEmptyView.swift */; };
+		7991C2C32B97A204009381D7 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991C2C22B97A204009381D7 /* UserInfoViewController.swift */; };
+		7991C2C42B97A204009381D7 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991C2C22B97A204009381D7 /* UserInfoViewController.swift */; };
+		7991C2C52B97A204009381D7 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991C2C22B97A204009381D7 /* UserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,7 @@
 		797486292B954C9F0060943E /* GHAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHAvatarImageView.swift; sourceTree = "<group>"; };
 		7991C2BA2B977DD2009381D7 /* UIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelpers.swift; sourceTree = "<group>"; };
 		7991C2BE2B9795F7009381D7 /* GHEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHEmptyView.swift; sourceTree = "<group>"; };
+		7991C2C22B97A204009381D7 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +241,7 @@
 				797485E92B94B2DE0060943E /* FavoritesListViewController.swift */,
 				797485F72B94FD260060943E /* FollowerListViewController.swift */,
 				797486082B9506A30060943E /* GFAlertViewController.swift */,
+				7991C2C22B97A204009381D7 /* UserInfoViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -390,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				797485F22B94D6760060943E /* GFTextField.swift in Sources */,
+				7991C2C32B97A204009381D7 /* UserInfoViewController.swift in Sources */,
 				797485E62B94B2B20060943E /* SearchViewController.swift in Sources */,
 				7974860D2B950BFE0060943E /* UIViewController+Ext.swift in Sources */,
 				797485EE2B94D37B0060943E /* GFButton.swift in Sources */,
@@ -433,6 +439,7 @@
 				797485FE2B9500470060943E /* TextValidation.swift in Sources */,
 				7974862B2B954C9F0060943E /* GHAvatarImageView.swift in Sources */,
 				797486232B95251C0060943E /* GHError.swift in Sources */,
+				7991C2C42B97A204009381D7 /* UserInfoViewController.swift in Sources */,
 				797485EF2B94D37B0060943E /* GFButton.swift in Sources */,
 				797485CD2B93E4810060943E /* GHFollowers_UIKitTests.swift in Sources */,
 			);
@@ -443,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				797485F42B94D6760060943E /* GFTextField.swift in Sources */,
+				7991C2C52B97A204009381D7 /* UserInfoViewController.swift in Sources */,
 				797485E82B94B2B20060943E /* SearchViewController.swift in Sources */,
 				7974860F2B950BFE0060943E /* UIViewController+Ext.swift in Sources */,
 				797485F02B94D37B0060943E /* GFButton.swift in Sources */,
