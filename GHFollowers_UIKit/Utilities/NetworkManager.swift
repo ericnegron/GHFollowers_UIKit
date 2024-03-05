@@ -16,7 +16,7 @@ class NetworkManager {
     private init() {}
     
     func getGHFollowers(forUserName username: String, page: Int, completed: @escaping (Result<[Follower], GHError>) -> Void) {
-        let endpoint = baseURL + "users/\(username)/followers?per_page=100&page"
+        let endpoint = baseURL + "users/\(username)/followers?per_page=100&page=\(page)"
         
         guard let url = URL(string: endpoint) else {
             completed(.failure(.invalidUsername))
