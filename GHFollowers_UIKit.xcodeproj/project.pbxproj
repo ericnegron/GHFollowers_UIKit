@@ -62,6 +62,9 @@
 		7974862A2B954C9F0060943E /* GHAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797486292B954C9F0060943E /* GHAvatarImageView.swift */; };
 		7974862B2B954C9F0060943E /* GHAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797486292B954C9F0060943E /* GHAvatarImageView.swift */; };
 		7974862C2B954C9F0060943E /* GHAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797486292B954C9F0060943E /* GHAvatarImageView.swift */; };
+		7991C2BB2B977DD2009381D7 /* UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991C2BA2B977DD2009381D7 /* UIHelpers.swift */; };
+		7991C2BC2B977DD2009381D7 /* UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991C2BA2B977DD2009381D7 /* UIHelpers.swift */; };
+		7991C2BD2B977DD2009381D7 /* UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991C2BA2B977DD2009381D7 /* UIHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,7 @@
 		797486212B95251C0060943E /* GHError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHError.swift; sourceTree = "<group>"; };
 		797486252B954C1F0060943E /* FollowerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCollectionViewCell.swift; sourceTree = "<group>"; };
 		797486292B954C9F0060943E /* GHAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHAvatarImageView.swift; sourceTree = "<group>"; };
+		7991C2BA2B977DD2009381D7 /* UIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +220,7 @@
 				7974860C2B950BFE0060943E /* UIViewController+Ext.swift */,
 				7974861D2B95191D0060943E /* NetworkManager.swift */,
 				797486212B95251C0060943E /* GHError.swift */,
+				7991C2BA2B977DD2009381D7 /* UIHelpers.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 				797485EE2B94D37B0060943E /* GFButton.swift in Sources */,
 				797485F82B94FD260060943E /* FollowerListViewController.swift in Sources */,
 				797486222B95251C0060943E /* GHError.swift in Sources */,
+				7991C2BB2B977DD2009381D7 /* UIHelpers.swift in Sources */,
 				797485B62B93E47F0060943E /* AppDelegate.swift in Sources */,
 				7974861A2B95158D0060943E /* User.swift in Sources */,
 				797486262B954C1F0060943E /* FollowerCollectionViewCell.swift in Sources */,
@@ -407,6 +413,7 @@
 				7974861B2B95158D0060943E /* User.swift in Sources */,
 				7974860A2B9506A30060943E /* GFAlertViewController.swift in Sources */,
 				797485EB2B94B2DE0060943E /* FavoritesListViewController.swift in Sources */,
+				7991C2BC2B977DD2009381D7 /* UIHelpers.swift in Sources */,
 				797485E72B94B2B20060943E /* SearchViewController.swift in Sources */,
 				7974860E2B950BFE0060943E /* UIViewController+Ext.swift in Sources */,
 				797485F92B94FD260060943E /* FollowerListViewController.swift in Sources */,
@@ -434,6 +441,7 @@
 				797485F02B94D37B0060943E /* GFButton.swift in Sources */,
 				797485FA2B94FD260060943E /* FollowerListViewController.swift in Sources */,
 				797486242B95251C0060943E /* GHError.swift in Sources */,
+				7991C2BD2B977DD2009381D7 /* UIHelpers.swift in Sources */,
 				797485D92B93E4810060943E /* GHFollowers_UIKitUITestsLaunchTests.swift in Sources */,
 				7974861C2B95158D0060943E /* User.swift in Sources */,
 				797486282B954C1F0060943E /* FollowerCollectionViewCell.swift in Sources */,
