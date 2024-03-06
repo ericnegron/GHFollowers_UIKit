@@ -52,43 +52,44 @@ class NetworkManager {
         task.resume()
     }
     
+    func getGHUser(forUserName username: String, completed: @escaping (Result<User, GHError>) -> Void) {
+        let endpoint = baseURL + "users/\(username)"
+        
+        guard let url = URL(string: endpoint) else {
+            completed(.failure(.invalidUsername))
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if let _ = error {
+                completed(.failure(.unableToComplete))
+                return
+            }
+            
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+                completed(.failure(.invalidResponse))
+                return
+            }
+            
+            guard let data = data else {
+                completed(.failure(.invalidData))
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let user = try decoder.decode(User.self, from: data)
+                completed(.success(user))
+            } catch {
+                completed(.failure(.invalidData))
+            }
+            
+            
+        }
+
+        task.resume()
+    }
+        
     
-//    func getGHFollowers(forUserName username: String, page: Int, completed: @escaping ([Follower]?, GHError?) -> Void) {
-//        let endpoint = baseURL + "users/\(username)/followers?per_page=100&page"
-//        
-//        guard let followersURL = URL(string: endpoint) else {
-//            completed(nil, .invalidUsername)
-//            return
-//        }
-//        
-//        let task = URLSession.shared.dataTask(with: followersURL) { data, response, error in
-//            
-//            if let _ = error {
-//                completed(nil, .unableToComplete)
-//                return
-//            }
-//            
-//            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-//                completed(nil, .invalidResponse)
-//                return
-//            }
-//            
-//            guard let data = data else {
-//                completed(nil, .invalidData)
-//                return
-//            }
-//            
-//            do {
-//                let decoder = JSONDecoder()
-//                decoder.keyDecodingStrategy = .convertFromSnakeCase
-//                let followers = try decoder.decode([Follower].self, from: data)
-//                completed(followers, nil)
-//            } catch {
-//                completed(nil, .invalidData)
-//            }
-//            
-//        }
-//        
-//        task.resume()
-//    }
 }

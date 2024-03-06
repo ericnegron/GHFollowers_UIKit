@@ -88,7 +88,14 @@ class FollowerListViewController: UIViewController {
     
     
     // MARK: - Navigation
-    
+    func presentUserInfoViewController(for follower: Follower) {
+        let destinationVC = UserInfoViewController()
+        destinationVC.userName = follower.login
+        
+        let navController = UINavigationController(rootViewController: destinationVC)
+        present(navController, animated: true)
+    }
+
     
     // MARK: - Networking
     func getFollowers(username: String, page: Int) {
@@ -141,12 +148,9 @@ extension FollowerListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let activeArray = isSearching ? filteredFollowers : followers
         let follower = activeArray[indexPath.item]
-        
-        let destinationVC = UserInfoViewController()
-        destinationVC.userName = follower.login
-        
-        let navController = UINavigationController(rootViewController: destinationVC)
-        present(navController, animated: true)
+  
+        presentUserInfoViewController(for: follower)
+
     }
 }
 
